@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Review Orders</title>
+    <link rel="stylesheet" href="complex.css">
+</head>
+
+<body>
+
+<div class="container">
+
+  
+    <div class="top">
+    <span>Record ▼</span>
+
+    <label>View:</label>
+    <select>
+        <option>Review Orders</option>
+        <option>All Orders</option>
+        <option>New Orders</option>
+    </select>
+</div>
+
+
+    <div class="order-info">
+
+        <div class="left">
+            <label>Customer:</label>
+            <input type="text" value="Bon app">
+
+            <label>Employee:</label>
+            <input type="text" value="Peacock">
+
+            <label>Order Date:</label>
+            <input type="date" value="1998-05-06">
+
+            <label>Required Date:</label>
+            <input type="date" value="1998-06-03">
+
+            <label>Shipped Date:</label>
+            <input type="date">
+        </div>
+
+        <div class="right">
+            <label>Address:</label>
+            <input type="text" value="12, rue des Bouchers">
+
+            <label>City:</label>
+            <input type="text" value="Marseille">
+
+            <label>Region:</label>
+            <input type="text">
+
+            <label>Postal Code:</label>
+            <input type="text" value="13008">
+
+            <label>Ship Country:</label>
+            <input type="text" value="France">
+        </div>
+
+    </div>
+
+
+    <div class="details">
+
+        <div class="search">
+    <input type="text" placeholder="cha">
+
+    <button>🔍</button>
+
+    <button>New Order Details</button>
+
+    <select>
+        <option>Actions</option>
+        <option>Edit</option>
+        <option>Delete</option>
+        <option>Print</option>
+    </select>
+</div>
+
+        <table>
+            <tr>
+                <th>Product Name</th>
+                <th>Unit Price</th>
+                <th>Quantity</th>
+                <th>Discount</th>
+                <th>Product Category<br>Name</th>
+                <th>Product Supplier<br>Company Name</th>
+                <th>Extended Price</th>
+            </tr>
+
+            <tr>
+                <td>Grandma's<br>Boysenberry Spread</td>
+                <td>$25.00</td>
+                <td>20</td>
+                <td>25.00 %</td>
+                <td>Condiments</td>
+                <td>Grandma Kelly's<br>Homestead</td>
+                <td>$375.00</td>
+            </tr>
+
+            <tr>
+                <td>Tofu</td>
+                <td>$23.25</td>
+                <td>20</td>
+                <td>25.00 %</td>
+                <td>Produce</td>
+                <td>Mayumi's</td>
+                <td>$348.75</td>
+            </tr>
+
+            <tr>
+                <td>Teatime Chocolate<br>Biscuits</td>
+                <td>$9.20</td>
+                <td>10</td>
+                <td>25.00 %</td>
+                <td>Confections</td>
+                <td>Specialty Biscuits,<br>Ltd.</td>
+                <td>$69.00</td>
+            </tr>
+        </table>
+
+        <div class="summary">
+            <span>Avg: $19.15</span>
+            <span>Sum: 50</span>
+            <span>Avg: 25.00 %</span>
+            <span>Sum: $792.75</span>
+        </div>
+
+    </div>
+
+   
+    <div class="bottom">
+
+        <div>
+            <label>Ship Name:</label>
+            <input type="text" value="Bon app'"><br>
+
+            <label>Ship Via:</label>
+            <select>
+                <option>United Package</option>
+            </select>
+        </div>
+
+        <div class="prices">
+            <p><b>Subtotal:</b> $792.75</p>
+            <p><b>Freight:</b> <input type="text" value="$38.28"></p>
+            <p><b>Total:</b> $831.03</p>
+        </div>
+
+    </div>
+
+
+    <div class="buttons">
+        <button>OK</button>
+        <button>Delete</button>
+        <button>Cancel</button>
+    </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,117 @@
+body {
+    font-family: Arial;
+    margin: 0;
+    background-color: white;
+}
+
+
+
+header {
+    background-color: gray;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+
+
+
+.profile {
+    display: flex;
+    padding: 30px;
+    gap: 70px;
+    align-items: center;
+}
+
+.profile-pic img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+}
+
+.bio {
+    background-color: lightgray;
+    padding: 25px;
+   
+}
+
+
+
+.experience {
+    background-color: lightgreen;
+    margin: 20px 40px;
+    padding: 25px;
+}
+
+.experience h2 {
+    text-align: center;
+}
+
+
+
+
+.projects {
+    background-color: lightblue;
+    margin: 20px 40px;
+    padding: 25px;
+}
+
+.projects h2 {
+    text-align: center;
+}
+
+.project {
+    background-color: white;
+    margin: 15px;
+    padding: 10px;
+}
+
+
+
+
+.skills {
+    background-color: yellow;
+    margin: 20px 40px;
+    padding: 25px;
+}
+
+.skills h2 {
+    text-align: center;
+}
+
+
+
+.contact {
+    background-color: lightgray;
+    margin: 20px 40px;
+    padding: 25px;
+}
+
+.contact h2 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin: auto;
+}
+
+input,
+select,
+textarea {
+    margin-bottom: 15px;
+    padding: 8px;
+}
+
+textarea {
+    height: 100px;
+}
+
+button {
+    padding: 10px;
+    background-color: gray;
+    color: white;
+    border: none;
+}
