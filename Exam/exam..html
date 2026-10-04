@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help Link</title>
+    <link rel="stylesheet" href="exam.css">
+</head>
+<body>
+    <div class="navbar" id="home">
+        <div class="logo">
+            <span class="logo_icon">♥</span>
+            Help Link
+        </div>
+        <nav class="nav_links">
+            <a href="#home">Home</a>
+            <a href="#requests">Browse Requests</a>
+            <a href="#create-request">Offer Help</a>
+            <a href="#save">Save</a>
+            <a href="#profile">About</a>
+        </nav>
+        <div class="header_section">
+            <button class="icon_button" aria-label="Notifications">🔔</button>
+            <button class="icon_button" aria-label="Profile">👤</button>
+        </div>
+    </div>
+
+    <section class="hero">
+        <div class="hero_content">
+            <p class="small_text">A community for helping each other</p>
+            <h1>Connect, Share, and Make a Difference</h1>
+            <p class="hero_text">Request help or offer your expertise to make a positive impact in our community.</p>
+            <div class="hero_buttons">
+                <a href="#requests" class="primary_button">Browse Requests</a>
+                <a href="#create-request" class="primary_button">Offer Help</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="feature">
+            <div class="feature_icon">💡</div>
+            <div>
+                <h3>Find the right help</h3>
+                <p>Get matched with the perfect helper based on your needs and expertise.</p>
+            </div>
+        </div>
+        <div class="feature">
+            <div class="feature_icon">🤝</div>
+            <div>
+                <h3>Community Support</h3>
+                <p>Join a supportive community where people help each other grow and succeed.</p>
+            </div>
+        </div>
+        <div class="feature">
+            <div class="feature_icon">🌱</div>
+            <div>
+                <h3>Make a Difference</h3>
+                <p>Contribute your skills and knowledge to make a positive impact in someone's life.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="requests">
+        <div class="section_heading">
+            <h2>Browse Requests</h2>
+            <p>Explore the requests from people in need of help and find opportunities to assist.</p>
+        </div>
+
+        <div class="search">
+            <input type="search" placeholder="Search requests..." aria-label="Search requests">
+            <select aria-label="Filter by category">
+                <option>All Categories</option>
+                <option>Programming</option>
+                <option>Technical</option>
+                <option>CV Writing</option>
+                <option>Graphic Design</option>
+            </select>
+            <select aria-label="Filter by location">
+                <option>All Locations</option>
+                <option>Tripoli</option>
+                <option>Beirut</option>
+                <option>Other</option>
+            </select>
+        </div>
+
+        <div class="request-grid">
+            <article class="request-card">
+                <div class="request-image">💻</div>
+                <div class="request-content">
+                    <div class="card-top">
+                        <span class="category">Programming</span>
+                    </div>
+                    <h3>Help with Programming Project</h3>
+                    <p>I need help reviewing my programming project and understanding some difficult parts.</p>
+                    <div class="request-info">
+                        <span>📍 Tripoli</span>
+                        <span>🕒 2 hours ago</span>
+                    </div>
+                    <button class="outline-button">View Details</button>
+                </div>
+            </article>
+
+            <article class="request-card">
+                <div class="request-image">🔧</div>
+                <div class="request-content">
+                    <div class="card-top">
+                        <span class="category">Technical</span>
+                    </div>
+                    <h3>Need an Electrician</h3>
+                    <p>Looking for someone who can help fix an electrical problem at home.</p>
+                    <div class="request-info">
+                        <span>📍 Tripoli</span>
+                        <span>🕒 5 hours ago</span>
+                    </div>
+                    <button class="outline-button">View Details</button>
+                </div>
+            </article>
+
+            <article class="request-card">
+                <div class="request-image">📄</div>
+                <div class="request-content">
+                    <div class="card-top">
+                        <span class="category">CV Writing</span>
+                    </div>
+                    <h3>Improve My CV</h3>
+                    <p>I need help improving my CV before applying for a new job.</p>
+                    <div class="request-info">
+                        <span>📍 Tripoli</span>
+                        <span>🕒 Yesterday</span>
+                    </div>
+                    <button class="outline-button">View Details</button>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section class="section create-section" id="create-request">
+        <div class="form-container">
+            <div class="section-heading">
+                <p class="small-title">Get support</p>
+                <h2>Create a Help Request</h2>
+                <p>Tell the community what kind of help you need.</p>
+            </div>
+
+            <form class="help-form">
+                <div class="form-group">
+                    <label for="title">Request Title</label>
+                    <input id="title" type="text" placeholder="Example: Help with programming project" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="description">Description</label>
+                    <textarea id="description" rows="5" placeholder="Describe the help you need..." required></textarea>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="category">Category</label>
+                        <select id="category">
+                            <option>Programming</option>
+                            <option>Technical</option>
+                            <option>CV Writing</option>
+                            <option>Graphic Design</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="location">Location</label>
+                        <input id="location" type="text" placeholder="Tripoli">
+                    </div>
+                </div>
+
+                <fieldset class="form-group">
+                    <legend>Urgency</legend>
+                    <div class="radio-group">
+                        <label>
+                            <input type="radio" name="urgency" value="normal" checked>
+                            Normal
+                        </label>
+                        <label>
+                            <input type="radio" name="urgency" value="urgent">
+                            <span class="urgent-text">Urgent</span>
+                        </label>
+                    </div>
+                </fieldset>
+
+                <button type="submit" class="submit-button">Post Help Request</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="section profile-section" id="profile">
+        <div class="profile-card">
+            <div class="profile-header">
+                <div class="profile-avatar">👩🏻</div>
+                <div>
+                    <h2>Haneen Zibar</h2>
+                    <span class="helper-badge">Helper</span>
+                    <p>📍 Tripoli, Lebanon</p>
+                </div>
+            </div>
+
+            <div class="rating">
+                ⭐⭐⭐⭐⭐ <strong>4.8</strong> <span>(12 reviews)</span>
+            </div>
+
+            <p class="profile-description">
+                I'm a university student with skills in programming, CV writing, and graphic design. I love helping others!
+            </p>
+
+            <h3>Skills &amp; Services</h3>
+            <div class="skills">
+                <span>Programming</span>
+                <span>CV Writing</span>
+                <span>Logo Design</span>
+                <span>+2</span>
+            </div>
+
+            <div class="profile-buttons">
+                <button class="btn btn-primary">Save Profile</button>
+                <button class="btn btn-secondary">View Requests</button>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="footer-logo">♥ HelpLink</div>
+        <p>Connecting people. Sharing skills. Building community.</p>
+        <p>© 2026 HelpLink. All rights reserved.</p>
+    </footer>
+</body>
+</html>
