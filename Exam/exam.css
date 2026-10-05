@@ -69,7 +69,7 @@ body {
 
 .hero {
     height: 520px;
-    background-image: url('https://help-link.co.za/wp-content/uploads/2025/05/Helplink_FB_ProPicBlue.png');
+    background-image: url('https://i.pinimg.com/736x/c6/a7/05/c6a7054ccb9b148ecae9d4ae29fe7164.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -123,46 +123,6 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.features {
-    padding: 25px;
-    border-radius: 20px;
-    box-shadow: 0 15px 40px rgba(40, 20, 80, 0.08);
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    position: relative;
-    background: #fff;
-}
-
-.feature {
-    display: flex;
-    gap: 15px;
-    align-items: center;
-    padding: 15px;
-}
-
-.feature_icon {
-    width: 48px;
-    height: 48px;
-    flex-shrink: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #efecff;
-    border-radius: 12px;
-    font-size: 20px;
-}
-
-.feature h3 {
-    font-size: 18px;
-    font-weight: 600;
-    margin-bottom: 5px;
-}
-
-.feature p {
-    font-size: 14px;
-    color: #666;
-}
 
 .section {
     padding: 60px 20px;
@@ -315,7 +275,7 @@ body {
         align-items: center;
     }
 
-    .features,
+   
     .request-grid,
     .search {
         grid-template-columns: 1fr;
@@ -591,7 +551,3 @@ body {
     margin-bottom: 4px;
 }
 
-@media (max-width: 640px) {
-    .tracking-card { padding: 22px; }
-    .tracking-title { flex-direction: column; }
-}
